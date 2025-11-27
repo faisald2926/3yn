@@ -1,4 +1,4 @@
-# 👁️ 3yn (Ein): Autonomous Weapon Detection & Response System
+#  3yn (Ein): Autonomous Weapon Detection & Response System
 
 **An intelligent, privacy-first security agent that detects weapons in real-time and evolves through human feedback.**
 
