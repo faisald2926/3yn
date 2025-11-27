@@ -35,6 +35,8 @@ Our model was trained and fine-tuned using a curated mix of open-source datasets
 *   **Base Model:** YOLOv8s (Small)
 *   **Training Set:** 8,000+ Images
 *   **Result:** 92.25% mAP50 (Precision: 90%, Recall: 87%)
+<img width="664" height="490" alt="image" src="https://github.com/user-attachments/assets/13045801-12a4-46f9-900c-fbb2cec8b626" />
+<img width="2400" height="1200" alt="results" src="https://github.com/user-attachments/assets/5381f190-8180-4622-ac6a-3d84d5d10465" />
 
 ---
 
@@ -54,10 +56,11 @@ Open a second terminal to launch the verification interface.
 code
 Bash
 streamlit run dashboard.py
-🧠 System Architecture (Concept)
-Edge Node: NVIDIA Jetson / PC runs guard_agent.py.
-Inference: Optimized .onnx model scans frames at 30 FPS.
-Trigger: If Confidence > 50%, the frame is captured.
-Verification: Image sent to Dashboard.
-CONFIRM: Alert Police -> Image saved to "True Threats" dataset.
-DISMISS: False Alarm -> Image saved to "False Positives" dataset for retraining.
+## 🧠 System Architecture (Concept)
+
+1.  **Edge Node:** NVIDIA Jetson / PC runs `guard_agent.py`.
+2.  **Inference:** Optimized `.onnx` model scans frames at 30 FPS.
+3.  **Trigger:** If Confidence > 50%, the frame is captured.
+4.  **Verification:** Image sent to Dashboard.
+    *   **CONFIRM:** Alert Police → Image saved to "True Threats" dataset.
+    *   **DISMISS:** False Alarm → Image saved to "False Positives" dataset for retraining.
