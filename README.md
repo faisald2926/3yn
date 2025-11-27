@@ -33,7 +33,7 @@ Our model was trained and fine-tuned using a curated mix of open-source datasets
 
 **Training Achievement:**
 *   **Base Model:** YOLOv8s (Small)
-*   **Training Set:** 4,000+ Images
+*   **Training Set:** 8,000+ Images
 *   **Result:** 92.25% mAP50 (Precision: 90%, Recall: 87%)
 
 ---
@@ -42,5 +42,22 @@ Our model was trained and fine-tuned using a curated mix of open-source datasets
 
 ### 1. Install Dependencies
 Ensure you have Python 3.10+ installed.
-```bash
+bash
 pip install -r requirements.txt
+### 2. Start the AI Agent (The "Eye")
+This script connects to the camera (Webcam/RTSP), detects threats, and logs evidence securely.
+code
+Bash
+python guard_agent.py
+### 3. Launch the Dashboard (The "Brain")
+Open a second terminal to launch the verification interface.
+code
+Bash
+streamlit run dashboard.py
+🧠 System Architecture (Concept)
+Edge Node: NVIDIA Jetson / PC runs guard_agent.py.
+Inference: Optimized .onnx model scans frames at 30 FPS.
+Trigger: If Confidence > 50%, the frame is captured.
+Verification: Image sent to Dashboard.
+CONFIRM: Alert Police -> Image saved to "True Threats" dataset.
+DISMISS: False Alarm -> Image saved to "False Positives" dataset for retraining.
