@@ -37,6 +37,8 @@ Our model was trained and fine-tuned using a curated mix of open-source datasets
 *   **Result:** 92.25% mAP50 (Precision: 90%, Recall: 87%)
 <img width="664" height="490" alt="image" src="https://github.com/user-attachments/assets/13045801-12a4-46f9-900c-fbb2cec8b626" />
 <img width="2400" height="1200" alt="results" src="https://github.com/user-attachments/assets/5381f190-8180-4622-ac6a-3d84d5d10465" />
+![labels_correlogram](https://github.com/user-attachments/assets/a50ae3be-355b-409f-81e2-06145f2368b4)
+![labels](https://github.com/user-attachments/assets/7c9d0c96-15b4-490a-9892-979b105303ef)
 
 ---
 
