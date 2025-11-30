@@ -5,10 +5,9 @@ import torch
 def main():
     # --- CONFIGURATION ---
     # 1. The Data
-    YAML_PATH = r"D:\Downloads_HDD\WeaponsDetector\Guns and knives.v1i.yolov8\data.yaml"
+    YAML_PATH = r"D:\WeaponsDetector\Guns and knives.v1i.yolov8\data.yaml"
     
-    # 2. The Brain to Start From (THE OLDE 3yn_Training_Run_Fixed MODEL)
-    START_MODEL = r"D:\Downloads_HDD\WeaponsDetector\3yn_WeaponsDetector\runs\detect\3yn_Training_Run_Fixed\weights\best.pt"
+    START_MODEL = r"D:\WeaponsDetector\3yn_WeaponsDetector\runs\detect\3yn_Training_Run_Fixed\weights\best.pt"
 
     PROJECT_NAME = '3yn_Ultimate_v3'
     EPOCHS = 50
@@ -68,4 +67,5 @@ def main():
     print(f"✅ DONE! Final file: {path}")
 
 if __name__ == '__main__':
+
     main()
