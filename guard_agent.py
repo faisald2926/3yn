@@ -5,7 +5,7 @@ from ultralytics import YOLO
 from datetime import datetime
 
 # --- CONFIG ---
-MODEL_PATH = './runs/detect/3yn_Ultimate_v32/weights/best.onnx' 
+MODEL_PATH = './models/best.onnx' 
 CAMERA_SOURCE = 0 
 CONFIDENCE_HRESHOLD = 0.60
 ALERT_FOLDER = "alerts"
