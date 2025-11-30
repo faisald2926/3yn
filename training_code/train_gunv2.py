@@ -4,7 +4,7 @@ import torch
 
 def main():
     # --- CONFIGURATION ---
-    yaml_path = r"D:\Downloads_HDD\WeaponsDetector\guns.v2i.yolov8\data.yaml"
+    yaml_path = r"D:\WeaponsDetector\guns.v2i.yolov8\data.yaml"
 
     MODEL_NAME = 'yolov8s.pt'
     EPOCHS = 50
@@ -47,4 +47,5 @@ def main():
     print(f"✅ 3yn Ready! Model saved at: {path}")
 
 if __name__ == '__main__':
+
     main()
