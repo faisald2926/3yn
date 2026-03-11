@@ -12,6 +12,13 @@ Using a custom fine-tuned **YOLOv8** model, 3yn monitors video feeds for firearm
 
 ---
 
+## 📌 Model Development Note
+
+The current detection model is an improved iteration of an earlier version that was initially developed through outsourcing during the early stages of the project. 
+
+Rather than being built entirely from scratch, this model was further refined and enhanced as part of the 3yn system development process. Subsequent work focused on retraining, performance optimization, and integrating the model into the broader real-time detection and response architecture.
+
+The version included in this repository reflects these improvements and additional development carried out within this project.
 ## 🚀 Key Features
 
 - **YOLOv8 Intelligence:** Built on the state-of-the-art YOLOv8 architecture, optimized for speed and accuracy.
